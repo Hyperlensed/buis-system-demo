@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7jg03jqyk2so"]
+
+[ext_resource type="Script" uid="uid://cqlyjhda1qy7i" path="res://demo/Hyperlensed/buis-ui-system/DemoSceneSelector.cs" id="1_5ddfj"]
+[ext_resource type="PackedScene" uid="uid://um04c6j56e0p" path="res://demo/Hyperlensed/buis-ui-system/DemoScenes/Counters/Counters.tscn" id="2_iqrw2"]
+[ext_resource type="PackedScene" uid="uid://bhf0k1imhfkvv" path="res://demo/Hyperlensed/buis-ui-system/DemoScenes/CardsDragAndDrop/CardsDragAndDrop.tscn" id="3_s1l0d"]
+
+[node name="DemoSceneSelector" type="Control" node_paths=PackedStringArray("SceneContainer", "DemoSceneSelectorButton")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5ddfj")
+SceneContainer = NodePath("SceneContainer")
+DemoSceneSelectorButton = NodePath("DemoSceneSelectorButton")
+DemoScenes = Array[PackedScene]([ExtResource("2_iqrw2"), ExtResource("3_s1l0d")])
+
+[node name="SceneContainer" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DemoSceneSelectorButton" type="OptionButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -250.0
+offset_top = -50.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
+selected = 0
+allow_reselect = true
+item_count = 2
+popup/item_0/text = "Counters"
+popup/item_0/id = 0
+popup/item_1/text = "Cards Drag & Drop"
+popup/item_1/id = 1
