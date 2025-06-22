@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "buis-ui-system-demo", "buis-ui-system-demo.csproj", "{C239D2C6-AAE7-4EEB-B79E-58BD2EAEDDEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "buis-system-demo", "buis-system-demo.csproj", "{C239D2C6-AAE7-4EEB-B79E-58BD2EAEDDEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

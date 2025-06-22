@@ -10,18 +10,18 @@ config_version=5
 
 [application]
 
-config/name="buis-ui-system-demo"
+config/name="buis-system-demo"
 run/main_scene="uid://b7jg03jqyk2so"
 config/features=PackedStringArray("4.4", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [dotnet]
 
-project/assembly_name="buis-ui-system-demo"
+project/assembly_name="buis-system-demo"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/Hyperlensed/buis-ui-system/plugin.cfg")
+enabled=PackedStringArray("res://addons/Hyperlensed/buis-system/plugin.cfg")
 
 [rendering]
 
